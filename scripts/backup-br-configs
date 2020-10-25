@@ -4,13 +4,14 @@ dest=$HOME/projects/bash/arch-configs/root
 
 # Single files
 sudo cp /boot/loader/loader.conf $dest/boot/loader
-sudo cp /etc/lightdm/display_setup.sh $dest/etc/lightdm/display_setup.sh
-sudo cp /etc/lightdm/lightdm.conf $dest/etc/lightdm/lightdm.conf
-sudo cp /etc/lightdm/lightdm-gtk-greeter.conf $dest/etc/lightdm/lightdm-gtk-greeter.conf
+sudo cp /etc/lightdm/display_setup.sh $dest/etc/lightdm
+sudo cp /etc/lightdm/lightdm.conf $dest/etc/lightdm
+sudo cp /etc/lightdm/lightdm-gtk-greeter.conf $dest/etc/lightdm
 sudo cp /etc/zsh/zshenv $dest/etc/zsh
 sudo cp /etc/fstab $dest/etc
 sudo cp /etc/xdg/reflector/reflector.conf $dest/etc/xdg/reflector
 sudo cp /etc/intel-undervolt.conf $dest/etc
+sudo cp /etc/fonts/conf.d/10-powerline-extra-symbols.conf $dest/etc/fonts/conf.d
 
 # All files in a given folder
 sudo cp /boot/loader/entries/* $dest/boot/loader/entries
