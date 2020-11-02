@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 dest=$HOME/projects/bash/arch-configs/root
 
@@ -11,10 +11,12 @@ sudo cp /etc/zsh/zshenv $dest/etc/zsh
 sudo cp /etc/fstab $dest/etc
 sudo cp /etc/xdg/reflector/reflector.conf $dest/etc/xdg/reflector
 sudo cp /etc/intel-undervolt.conf $dest/etc
-sudo cp /etc/fonts/conf.d/10-powerline-extra-symbols.conf $dest/etc/fonts/conf.d
+sudo cp /etc/mkinitcpio.conf $dest/etc
+sudo cp /etc/pacman.conf $dest/etc #DO NOT restore automatically! (copy stuff manually, e.g. enable Color, ILoveCandy, packages not to be updated...)
 
 # All files in a given folder
 sudo cp /boot/loader/entries/* $dest/boot/loader/entries
 sudo cp /etc/X11/xorg.conf.d/* $dest/etc/X11/xorg.conf.d
 sudo cp /etc/sysctl.d/* $dest/etc/sysctl.d
 sudo cp /etc/modprobe.d/* $dest/etc/modprobe.d
+sudo cp /etc/pacman.d/hooks/* $dest/etc/pacman.d/hooks
