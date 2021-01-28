@@ -13,6 +13,15 @@ sudo cp /etc/xdg/reflector/reflector.conf $dest/etc/xdg/reflector
 sudo cp /etc/intel-undervolt.conf $dest/etc
 sudo cp /etc/mkinitcpio.conf $dest/etc
 sudo cp /etc/pacman.conf $dest/etc #DO NOT restore automatically! (copy stuff manually, e.g. enable Color, ILoveCandy, packages not to be updated...)
+sudo cp /etc/systemd/system/checkupdates.service $dest/etc/systemd/system #For this one, create a folder in /var/local called checkupdates and chown it to appropriate user
+sudo cp /etc/systemd/system/checkupdates.timer $dest/etc/systemd/system
+sudo cp /etc/systemd/system/systemd-fsck-root.service $dest/etc/systemd/system
+sudo cp /etc/systemd/system/systemd-fsck@.service $dest/etc/systemd/system
+sudo cp /usr/share/fonts/SF-Pro-Text-Bold.otf $dest/usr/share/fonts
+sudo cp /usr/share/fonts/SF-Pro-Text-Medium.otf $dest/usr/share/fonts
+sudo cp /usr/share/fonts/SF-Pro-Text-Regular.otf $dest/usr/share/fonts
+sudo cp /lib/systemd/system-sleep/prochot $dest/lib/systemd/system-sleep
+sudo cp /etc/bluetooth/main.conf $dest/etc/bluetooth
 
 # All files in a given folder
 sudo cp /boot/loader/entries/* $dest/boot/loader/entries
@@ -20,3 +29,8 @@ sudo cp /etc/X11/xorg.conf.d/* $dest/etc/X11/xorg.conf.d
 sudo cp /etc/sysctl.d/* $dest/etc/sysctl.d
 sudo cp /etc/modprobe.d/* $dest/etc/modprobe.d
 sudo cp /etc/pacman.d/hooks/* $dest/etc/pacman.d/hooks
+sudo cp -r /usr/share/icons/capitaine-cursors-black $dest/usr/share/icons
+sudo cp -r /usr/share/icons/capitaine-cursors-white $dest/usr/share/icons
+sudo cp -r /usr/share/icons/xcursor-breeze $dest/usr/share/icons
+sudo cp -r /usr/share/icons/default $dest/usr/share/icons
+sudo cp -r /usr/share/themes/NordArc-Theme $dest/usr/share/themes

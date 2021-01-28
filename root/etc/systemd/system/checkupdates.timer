@@ -1,0 +1,9 @@
+[Unit]
+Description=Check available updates
+
+[Timer]
+OnCalendar=hourly
+Unit=checkupdates.service
+
+[Install]
+WantedBy=timers.target

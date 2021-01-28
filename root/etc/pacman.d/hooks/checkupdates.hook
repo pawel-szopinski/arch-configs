@@ -1,0 +1,9 @@
+[Trigger]
+Operation=Upgrade
+Type=Package
+Target=*
+
+[Action]
+Description=Check available updates...
+When=PostTransaction
+Exec=/usr/bin/sh -c '/usr/bin/checkupdates+aur > /var/local/checkupdates/packages 2>&1; exit 0'

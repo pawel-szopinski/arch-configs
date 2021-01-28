@@ -1,0 +1,12 @@
+[Unit]
+Description=Check available updates
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/paul/.local/bin/checkupdates-network-safe
+User=paul
+
+[Install]
+WantedBy=multi-user.target

@@ -9,7 +9,7 @@ LABEL=ARCH-BOOT /boot vfat rw,relatime,fmask=0022,dmask=0022,codepage=437,iochar
 LABEL=arch-home	/home ext4 rw,relatime 0 2
 
 # Other
-LABEL=ssd-ext /data/ssd-ext ext4 defaults 0 0 
+#LABEL=ssd-ext /data/ssd-ext ext4 defaults 0 0 
 #LABEL=hdd-osshared /data/hdd-osshared ntfs-3g defaults 0 0
 #LABEL=hdd-ext /data/hdd-ext ext4 defaults 0 0
 
