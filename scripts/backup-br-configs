@@ -22,6 +22,7 @@ sudo cp /usr/share/fonts/SF-Pro-Text-Medium.otf $dest/usr/share/fonts
 sudo cp /usr/share/fonts/SF-Pro-Text-Regular.otf $dest/usr/share/fonts
 sudo cp /lib/systemd/system-sleep/prochot $dest/lib/systemd/system-sleep
 sudo cp /etc/bluetooth/main.conf $dest/etc/bluetooth
+sudo cp /etc/profile.d/autojump.sh $dest/profile.d
 
 # All files in a given folder
 sudo cp /boot/loader/entries/* $dest/boot/loader/entries
