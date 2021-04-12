@@ -20,7 +20,6 @@ sudo cp /etc/systemd/system/systemd-fsck@.service $dest/etc/systemd/system
 sudo cp /usr/share/fonts/SF-Pro-Text-Bold.otf $dest/usr/share/fonts
 sudo cp /usr/share/fonts/SF-Pro-Text-Medium.otf $dest/usr/share/fonts
 sudo cp /usr/share/fonts/SF-Pro-Text-Regular.otf $dest/usr/share/fonts
-sudo cp /lib/systemd/system-sleep/prochot $dest/lib/systemd/system-sleep
 sudo cp /etc/bluetooth/main.conf $dest/etc/bluetooth
 sudo cp /etc/profile.d/autojump.sh $dest/profile.d
 
@@ -30,6 +29,7 @@ sudo cp /etc/X11/xorg.conf.d/* $dest/etc/X11/xorg.conf.d
 sudo cp /etc/sysctl.d/* $dest/etc/sysctl.d
 sudo cp /etc/modprobe.d/* $dest/etc/modprobe.d
 sudo cp /etc/pacman.d/hooks/* $dest/etc/pacman.d/hooks
+sudo cp /lib/systemd/system-sleep/* $dest/lib/systemd/system-sleep
 sudo cp -r /usr/share/icons/capitaine-cursors-black $dest/usr/share/icons
 sudo cp -r /usr/share/icons/capitaine-cursors-white $dest/usr/share/icons
 sudo cp -r /usr/share/icons/xcursor-breeze $dest/usr/share/icons

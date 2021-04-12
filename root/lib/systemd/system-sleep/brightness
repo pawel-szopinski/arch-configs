@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# fixes a bug where polybar displays 0% brightness after wake up
+
+case "$1" in
+    post)
+        brightnessctl s $(cat /sys/class/backlight/intel_backlight/actual_brightness)
+        ;;
+esac
