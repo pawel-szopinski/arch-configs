@@ -1,0 +1,9 @@
+[Trigger]
+Operation=Upgrade
+Type=Package
+Target=betterlockscreen-git
+
+[Action]
+Description=Updating betterlockscreen systemd service...
+When=PostTransaction
+Exec=/usr/bin/sed -i '10s/$/ blur/' /usr/lib/systemd/system/betterlockscreen@.service
